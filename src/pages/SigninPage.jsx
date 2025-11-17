@@ -1,7 +1,9 @@
 
 const SigninPage = () => {
   return (
-    <div>SigninPage</div>
+    <div className="w-full h-screen bg-[red]">
+        
+    </div>
   )
 }
 
