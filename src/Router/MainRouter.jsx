@@ -3,6 +3,7 @@ import Layout from "../components/Layouts/Layout";
 import Homepage from "../pages/Homepage";
 import Landingpage from "../pages/Landingpage";
 import Welcomepage from "../pages/Welcomepage";
+import QuestionPage from "../pages/Questionpage";
 
 const Mainrouter = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const Mainrouter = createBrowserRouter([
         path: "/welcomepage",
         element: <Welcomepage />,
       },
+      {
+        path:"/questionpage",
+        element:<QuestionPage/>
+      }
     ],
   },
 ]);
