@@ -6,8 +6,8 @@ const Landingpage = () => {
         navigate("/homepage");
     };
   return (
-    <div className="w-full h-screen bg-[red] ">
-        <div className="w-[100%] h-[100vh] bg-[blue] bg-gradient-to-b from-blue-800 via-blue-500 to-white min-h-screen flex justify-center items-center flex-col ">
+    <div className="w-full h-screen ">
+        <div className="w-[100%] h-[100vh] bg-gradient-to-b from-blue-800 via-blue-500 to-white min-h-screen flex justify-center items-center flex-col ">
             <LuNotebookPen size="90px" className="2xl:size-40" />
             <div className="text-[40px] text-center font-bold mb-[100px] lg:text-[60px] ">
                 EduNexa
