@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdQuiz } from "react-icons/md";
 import { PiSmileyStickerFill } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 const Homepage = () => {
@@ -12,20 +13,29 @@ const Homepage = () => {
         }
         localStorage.setItem("username:", username)
         navigate("/welcomepage")
+        
     }
   return (
-    <div className="w-full h-screen bg-gradient-to-br from-blue-800 via-blue-600 to-white min-h-screen flex justify-center items-center flex-col">
-        <div className="text-[50px] flex justify-center items-center gap-x-4 mb-[20px] font-semibold md:text-[70px] lg:text-[100px] ">
-            Welcome 
-            <PiSmileyStickerFill />
+    <div className="w-full h-screen bg-[#fff5d8] flex justify-center items-center ">
+        <div className="w-[100%] h-[100%] bg-[#fff5d8] flex justify-between items-end flex-col ">
+            <div className="w-[100%] h-[40%] flex justify-center items-center font-serif text-[50px] font-semibold flex-col lg:text-[100px] md:text-[70px] ">
+            <MdQuiz size="130px" />
+             <div className="w-[100%] flex justify-center items-center ">
+                   EduNexa
+                <PiSmileyStickerFill/>
+             </div>
+            </div>
+            <div className="w-[100%] h-[60%] bg-[#eebc73] rounded-t-[50px] flex flex-col justify-center items-center md:flex ">
+                <div className="h-[60%] bg-white/50 backdrop-blur-lg shadow-2xl rounded-2xl p-8 w-[90%] mx-auto flex flex-col text-[20px] font-semibold justify-center items-center md:w-[70%] lg:w-[60%] ">
+                <div className="flex justify-center items-start mr-[50px] w-[100%] md:mr-[210px] lg:mr-[280px] 2xl:mr-[590px]  ">Kindly enter your Username:</div>
+                <input type="text" placeholder="Username" value={username} onChange={(e)=>setUsername(e.target.value)} className="p-4 w-[100%] rounded-[20px] placeholder:text-[grey] mt-[5px] mb-[40px] "/>
+                <button onClick={handleClick} className="bg-black text-[white] p-4 w-[150px]  rounded-[25px]">
+                    Register
+                </button>
+                </div>
+            </div>
+
         </div>
-        <div className="flex flex-col text-[20px] mr-[100px] gap-x-4 font-semibold mb-[50px] md:text-[25px] ">
-            Please enter your username:
-            <input type="text" placeholder="username"value={username} onChange={(e)=>setUsername(e.target.value)} className=" w-[130%] p-4 rounded-lg border border-grey-300 placeholder-blue-700 placeholder-opacity-100 focus:ring-2 focus:ring-blue-700 mt-[5px] "/>
-        </div>
-         <button onClick={handleClick} className="w-[150px] h-[40px] bg-[#234bbb] text-[18px] rounded-[16px] text-[white] font-semibold lg:w-[300px] md:w-[250px] ">
-                Register
-            </button>
 
     </div>
   )
