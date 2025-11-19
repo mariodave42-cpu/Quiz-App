@@ -64,7 +64,7 @@ function QuestionPage() {
                 className={`p-[2px_10px] w-[90%] mb-[10px] rounded-[3px] text-[15px] font-[500] lg:text-[23px] lg:p-[12px_15px] lg:rounded-[7px] cursor-pointer ${
                   isSelected
                     ? "bg-[white] text-[#818181]"
-                    : "bg-black text-[#818181] hover:bg-[#f7deb9]"
+                    : "bg-black text-[#818181] "
                 }`}
               >
                 {opt}
