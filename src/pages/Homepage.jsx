@@ -11,7 +11,7 @@ const Homepage = () => {
             alert("Please enter a Username ");
             return;
         }
-        localStorage.setItem("username:", username)
+        localStorage.setItem("username", username)
         navigate("/welcomepage")
         
     }
