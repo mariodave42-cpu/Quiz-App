@@ -15,7 +15,7 @@ const Welcomepage = () => {
     <div className="w-full h-screen bg-[#eebc73] flex justify-center items-center ">
       <div className=" w-[95%] h-[100%] flex items-center flex-col ">
         <div className="w-[100%] h-[10%] text-[40px] flex justify-between items-center font-bold ">
-          <div className="flex justify-center items-center italic lg:text-[70px] 2xl:text-[70px] ">
+          <div className="flex justify-center items-center lg:text-[70px] 2xl:text-[70px] ">
             EduNexa{" "}
             <LuNotebookPen size="40px" className="md:size-16 lg:size-22 " />
           </div>

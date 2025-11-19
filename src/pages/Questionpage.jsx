@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import quizData from "./quiz.json";
 import { LuNotebookPen } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 function QuestionPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState(
@@ -15,10 +16,15 @@ function QuestionPage() {
     updatedAnswers[currentQuestion] = option;
     setUserAnswers(updatedAnswers);
   };
+  const navigate = useNavigate();
 
   const handleNext = () => {
-    if (currentQuestion < totalQuestions - 1)
+    if (!userAnswers[currentQuestion]) return;
+    if (currentQuestion < totalQuestions - 1) {
       setCurrentQuestion(currentQuestion + 1);
+    } else {
+      navigate("/dashboard");
+    }
   };
 
   const handlePrevious = () => {
