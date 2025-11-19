@@ -14,7 +14,7 @@ const Landingpage = () => {
             <LuNotebookPen size="90px" className="2xl:size-40" />
             <div className="text-[40px] text-center font-bold mb-[70px] lg:text-[60px] ">
                 EduNexa
-                <div className="text-[20px] w-[280px] lg:text-[25px] font-semibold mt-[20px] ">
+                <div className="text-[20px] w-[280px] lg:text-[25px] font-bold mt-[20px] ">
                     Smart quizzes. Real insight. Better learning.
                 </div>
                 
