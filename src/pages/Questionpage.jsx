@@ -16,12 +16,6 @@ function QuestionPage() {
     setUserAnswers(updatedAnswers);
   };
 
-  const correct = quiz.filter((q) => q.userAnswer === q.answer);
-  const wrong = quiz.filter(
-    (q) => q.userAnswer !== "" && q.userAnswer !== q.answer
-  );
-  const unanswered = quiz.filter((q) => q.userAnswer === "");
-
   const handleNext = () => {
     if (currentQuestion < totalQuestions - 1)
       setCurrentQuestion(currentQuestion + 1);
@@ -84,7 +78,7 @@ function QuestionPage() {
           )}
 
           <div
-            className={`mr-[10px] bg-[black] rounded-[7px] p-[5px_12px] text-[15px] text-[#818181] font-[500] lg:text-[23px] lg:p-[10px_14px] cursor-pointer hover:bg-[#f7deb9]`}
+            className={`mr-[10px] bg-[black] rounded-[5px] p-[5px_12px] text-[15px] text-[#818181] font-[500] lg:text-[23px] lg:p-[10px_14px] cursor-pointer hover:bg-[#f7deb9]`}
             onClick={handleNext}
           >
             {isLast ? "Submit" : "Next"}
