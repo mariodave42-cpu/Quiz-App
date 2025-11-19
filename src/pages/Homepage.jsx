@@ -19,7 +19,7 @@ const Homepage = () => {
       <div className="w-[100%] h-[100%] bg-[#fff5d8] flex justify-between items-end flex-col ">
         <div className="w-[100%] h-[40%] flex justify-center items-center font-serif text-[50px] font-semibold flex-col lg:text-[100px] md:text-[70px] ">
           <MdQuiz size="130px" />
-          <div className="w-[100%] flex justify-center items-center italic">
+          <div className="w-[100%] flex justify-center items-center ">
             EduNexa
             <PiSmileyStickerFill />
           </div>
