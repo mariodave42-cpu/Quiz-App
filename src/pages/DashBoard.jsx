@@ -14,7 +14,7 @@ const DashBoard = ()=>{
       <div className="
       w-[90%]
       h-screen
-      bg-[grey]
+      bg-[gey]
       flex
       flex-col
       justify-betw
@@ -27,7 +27,7 @@ const DashBoard = ()=>{
         <div>Wiliams Daniel</div> 
             </div>  
         </div>
-        <hr className="bg-[red]"/>
+        <hr className="bg-[ed]"/>
         <div className="w-full h-[90px] bg-[lavener] flex-col flex justify-around">
           <div className="font-[600] text-[25px]">Quiz on General Knowledge</div>
           <div className="flex items-center w-[70%] gap-[60px]">
@@ -66,7 +66,7 @@ const DashBoard = ()=>{
         <div className="w-[19%] lg:w-[10%]">1</div>
             </div>
         </div>
-        <div className="w-full h-[100px] bg-[brown] font-[600] text-[15px] flex items-center gap-[30px] md:gap-[100px] lg:gap-[400px]">
+        <div className="w-full h-[100px] bg-[bown] font-[600] text-[15px] flex items-center gap-[30px] md:gap-[100px] lg:gap-[400px]">
     <div>Correct - 4</div>
     <div>Incorrect - 1</div>
     <div>Skipped - 0</div>
