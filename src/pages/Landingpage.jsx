@@ -33,7 +33,7 @@ const Landingpage = () => {
         <div className="w-[200px] h-[50px] rounded-[50%] bg-[#fff5d8] absolute right-[px] bottom-[100px]  ">
 
         </div>
-        <div className="w-[200px] h-[100px] rounded-[50%] border-[#115725] border-[2px] absolute top-[30px] right-[20px] z-10 lg:right-[140px] ">
+        <div className="w-[200px] h-[100px] rounded-[50%] border-[#115725] border-[2px] absolute top-[30px] right-[20px] z-10 lg:right-[140px]  ">
 
         </div>
         <div className="w-[150px] h-[100px] rounded-[50%] bg-[#ffc60b] absolute top-[60px] right-[20px] lg:right-[140px] ">
