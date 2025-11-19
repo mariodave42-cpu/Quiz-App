@@ -19,10 +19,28 @@ function QuestionPage() {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    if (!userAnswers[currentQuestion]) return;
+    if (!userAnswers[currentQuestion])
+      return alert("Please select an option before proceeding");
+
     if (currentQuestion < totalQuestions - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
+      const correctAnswers = quizData.quiz.map((q) => q.answer);
+      const wrongAnswers = userAnswers.map((answer, index) => {
+        return answer !== correctAnswers[index] ? answer : null;
+      });
+
+      const resultData = {
+        questions: quizData.quiz.map((q) => q.question),
+        userAnswers: userAnswers,
+        correctAnswers: correctAnswers,
+        wrongAnswers: wrongAnswers,
+        totalQuestions: quizData.quiz.length,
+        score: userAnswers.filter((ans, i) => ans === correctAnswers[i]).length,
+      };
+
+      localStorage.setItem("quizResults", JSON.stringify(resultData));
+
       navigate("/dashboard");
     }
   };
