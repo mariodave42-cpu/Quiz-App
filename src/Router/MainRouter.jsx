@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage";
 import Landingpage from "../pages/Landingpage";
 import Welcomepage from "../pages/Welcomepage";
 import QuestionPage from "../pages/Questionpage";
+import DashBoard from "../pages/DashBoard";
 
 const Mainrouter = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const Mainrouter = createBrowserRouter([
       {
         path:"/questionpage",
         element:<QuestionPage/>
+      },
+      {
+        path:"/dashboard",
+        element: <DashBoard/>
       }
     ],
   },
