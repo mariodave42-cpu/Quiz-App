@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { MdQuiz } from "react-icons/md";
-import { PiSmileyStickerFill } from "react-icons/pi";
+import img1 from "../assets/register.jpg"
 import { useNavigate } from "react-router-dom";
 const Homepage = () => {
   const navigate = useNavigate();
@@ -15,19 +14,20 @@ const Homepage = () => {
     navigate("/welcomepage");
   };
   return (
-    <div className="w-full h-screen bg-[#fff5d8] flex justify-center items-center ">
-      <div className="w-[100%] h-[100%] bg-[#fff5d8] flex justify-between items-end flex-col ">
+    <div className="w-full h-screen bg-[#ffffff] flex justify-center items-center ">
+      <div className="w-[100%] h-[100%] bg-[#ffffff] flex justify-between items-end flex-col ">
         <div className="w-[100%] h-[40%] flex justify-center items-center font-serif text-[50px] font-semibold flex-col lg:text-[100px] md:text-[70px] ">
-          <MdQuiz size="130px" />
-          <div className="w-[100%] flex justify-center items-center ">
+          <div className="w-[100%] h-[40%] flex justify-center italic items-center ">
             EduNexa
-            <PiSmileyStickerFill />
+          </div>
+          <div className="w-[70%] h-[60%] ">
+            <img src={img1} alt="Registration illustration" className="rounded-[15px] w-[100%] h-[100%] object-contain " />
           </div>
         </div>
-        <div className="w-[100%] h-[60%] bg-[#eebc73] rounded-t-[50px] flex flex-col justify-center items-center md:flex ">
-          <div className="h-[60%] bg-white/50 backdrop-blur-lg shadow-2xl rounded-2xl p-8 w-[90%] mx-auto flex flex-col text-[20px] font-semibold justify-center items-center md:w-[70%] lg:w-[60%] ">
-            <div className="flex justify-center items-start mr-[50px] w-[100%] md:mr-[210px] lg:mr-[280px] 2xl:mr-[590px]  ">
-              Kindly enter your Username:
+        <div className="w-[100%] h-[60%] bg-[#f3e5bc] rounded-t-[50px] flex flex-col justify-center items-center md:flex ">
+          <div className="h-[60%] bg-white/50 backdrop-blur-lg shadow-2xl rounded-2xl p-8 w-[70%] mx-auto flex flex-col text-[20px] font-semibold justify-center items-center md:w-[70%] lg:w-[50%] ">
+            <div className="flex justify-start items-start w-[90%] text-[18px]  ">
+              Enter your Username:
             </div>
             <input
               type="text"
