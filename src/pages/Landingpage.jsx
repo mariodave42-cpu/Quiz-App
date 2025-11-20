@@ -15,9 +15,9 @@ const Landingpage = () => {
           className="w-[100%] h-[100%] object-cover md:object-contain lg:object-contain"
         />
         <div className="absolute flex justify-center items-center h-[60%] w-[100%] flex-col">
-          <div className="text-[50px] text-[black] flex justify-between items-center flex-col  h-[90%] w-[100%] text-center font-bold mb-[70px] lg:text-[100px] ">
+          <div className="text-[50px] text-[black] flex justify-between items-center italic flex-col  h-[90%] w-[100%] text-center font-bold mb-[70px] lg:text-[100px] ">
             EduNexa
-            <div className="text-[20px] w-[100%] lg:text-[30px] font-bold mb-[80%] md:mb-[50%] lg:mb-[25%]  2xl:mb-[20%] ">
+            <div className="text-[20px] w-[100%] lg:text-[30px] font-serif font-bold mb-[80%] md:mb-[50%] lg:mb-[25%]  2xl:mb-[20%] ">
               Smart quizzes. Real insight. Better learning.
             </div>
             <button
