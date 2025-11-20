@@ -2,19 +2,19 @@
   "quiz": [
     {
       "question": "Solve for x: 3x + 7 = 22.",
-      "options": ["x = 5", "x = 4", "x = 6", "x = 7"],
+      "options": ["x = 7", "x = 4", "x = 6", "x = 5"],
       "answer": "x = 5",
       "userAnswer": ""
     },
     {
       "question": "If the sum of the interior angles of a polygon is 900°, how many sides does the polygon have?",
-      "options": ["7", "5", "6", "8"],
+      "options": ["6", "5", "7", "8"],
       "answer": "7",
       "userAnswer": ""
     },
     {
       "question": "Simplify: (2x^2 - 8) / (4x).",
-      "options": ["(x-2)(x+2)/2x", "(x+2)/2x", "x/2 - 2", "(x-4)(x+4)/4x"],
+      "options": [ "(x+2)/2x", "x/2 - 2", "(x-2)(x+2)/2x", "(x-4)(x+4)/4x"],
       "answer": "(x-2)(x+2)/2x",
       "userAnswer": ""
     },
@@ -26,13 +26,13 @@
     },
     {
       "question": "Identify the verb in the sentence: 'The students wrote their essays quickly.'",
-      "options": ["wrote", "essays", "students", "quickly"],
+      "options": [ "essays", "wrote","students", "quickly"],
       "answer": "wrote",
       "userAnswer": ""
     },
     {
       "question": "Correct the sentence: 'He don’t like to play football.'",
-      "options": ["He doesn’t like to play football.", "He like football.", "He not like football.", "He don’t likes football."],
+      "options": [ "He like football.", "He not like football.", "He don’t likes football.","He doesn’t like to play football."],
       "answer": "He doesn’t like to play football.",
       "userAnswer": ""
     },
@@ -44,13 +44,13 @@
     },
     {
       "question": "Give a synonym for the word: Happy.",
-      "options": ["Joyful", "Tired", "Angry", "Sad"],
+      "options": [ "Tired", "Angry","Joyful", "Sad"],
       "answer": "Joyful",
       "userAnswer": ""
     },
     {
       "question": "Name the process by which green plants make their food.",
-      "options": ["Photosynthesis", "Transpiration", "Respiration", "Fermentation"],
+      "options": [ "Transpiration", "Respiration", "Fermentation","Photosynthesis"],
       "answer": "Photosynthesis",
       "userAnswer": ""
     },
@@ -62,13 +62,13 @@
     },
     {
       "question": "State one difference between aerobic and anaerobic respiration.",
-      "options": ["Aerobic needs oxygen; anaerobic does not", "Aerobic produces less energy", "Anaerobic requires oxygen", "Anaerobic occurs in mitochondria only"],
+      "options": ["Aerobic produces less energy", "Aerobic needs oxygen; anaerobic does not", "Anaerobic requires oxygen", "Anaerobic occurs in mitochondria only"],
       "answer": "Aerobic needs oxygen; anaerobic does not",
       "userAnswer": ""
     },
     {
       "question": "Which blood cells are primarily responsible for fighting infections in the body?",
-      "options": ["White blood cells", "Red blood cells", "Platelets", "Plasma"],
+      "options": [ "Red blood cells", "Platelets","White blood cells", "Plasma"],
       "answer": "White blood cells",
       "userAnswer": ""
     },
@@ -80,7 +80,7 @@
     },
     {
       "question": "Give one example of a capital good.",
-      "options": ["Machinery", "Clothes", "Bread", "Water"],
+      "options": [ "Clothes","Machinery", "Bread", "Water"],
       "answer": "Machinery",
       "userAnswer": ""
     },
@@ -92,7 +92,7 @@
     },
     {
       "question": "If the price of bread increases, what is likely to happen to its demand?",
-      "options": ["Decrease", "Remain the same", "Increase", "Become zero"],
+      "options": [ "Remain the same", "Increase","Decrease", "Become zero"],
       "answer": "Decrease",
       "userAnswer": ""
     },
@@ -104,7 +104,7 @@
     },
     {
       "question": "What is the main function of the legislative arm of government?",
-      "options": ["Make laws", "Interpret laws", "Elect president", "Enforce laws"],
+      "options": [ "Interpret laws", "Elect president", "Enforce laws" ,"Make laws"],
       "answer": "Make laws",
       "userAnswer": ""
     },
