@@ -12,11 +12,11 @@ const Welcomepage = () => {
     navigate("/questionpage");
   };
   return (
-    <div className="w-full h-screen bg-[#eebc73] flex justify-center items-center ">
+    <div className="w-full h-screen bg-[#ffffff] flex justify-center items-center ">
       <div className=" w-[95%] h-[100%] flex items-center flex-col ">
         <div className="w-[100%] h-[10%] text-[40px] flex justify-between items-center font-bold ">
-          <div className="flex justify-center items-center lg:text-[70px] 2xl:text-[70px] ">
-            EduNexa{" "}
+          <div className="flex justify-center items-center italic lg:text-[70px] 2xl:text-[70px] ">
+            EduNexa
             <LuNotebookPen size="40px" className="md:size-16 lg:size-22 " />
           </div>
           <CgProfile className="md:size-24 lg:size-30 2xl:size-20" />
@@ -24,14 +24,14 @@ const Welcomepage = () => {
         <div className="w-[100%] h-[50%] flex flex-col justify-center items-center ">
           <div className="w-[100%] h-[25%] flex flex-col justify-center items-center ">
             <div className="text-[20px] flex gap-x-2 md:text-[28px] font-mono ">
-              Welcome 👋
+              Welcome 
             </div>
             <div className="text-[20px] font-bold md:text-[28px]  ">
               {" "}
               {username}!!!{" "}
             </div>
           </div>
-          <div className="w-[92%] h-[70%] mt-4 flex bg-[#fff5d8] rounded-[70px] mb-8 lg:w-[70%] justify-start items-start  ">
+          <div className="w-[92%] h-[70%] mt-4 flex bg-[#fff5d8] p-4 rounded-[30px] mb-8 lg:w-[70%] justify-start items-start  ">
             <div className="w-[50%] h-[100%] text-[25px] flex justify-center items-center flex-col -">
               Let's start now!
               <div className="text-center text-[15px] font-bold mb-8 mt-8 p-4">
@@ -53,13 +53,13 @@ const Welcomepage = () => {
             </div>
           </div>
         </div>
-        <div className="w-[92%] h-[15%] bg-[#fff5d8] rounded-[50px] mb-[25px] text-center flex justify-center items-center text-[15px] font-semibold  md:p-9 lg:w-[70%] ">
+        <div className="w-[92%] h-[15%] bg-[#fff5d8] rounded-[30px] mb-[25px] text-center p-2 flex justify-center items-center text-[15px] font-semibold  md:p-9 lg:w-[70%] ">
           Small steps, big results — that’s how champions prepare. Take a quiz
           now, challenge your limits, and push yourself closer to the grades
           you’re chasing 🎯🔥. Improvement starts with your next question.
         </div>
-        <div className="w-[92%] h-[15%] p-4 bg-[#fff5d8] rounded-[50px] text-center flex justify-center items-center flex-col text-[15px] font-semibold  md:p-9 lg:w-[70%] ">
-          <div className="mb-[10px] text-[15px] font-bold">Why Practice?</div>
+        <div className="w-[92%] h-[16%] p-2 bg-[#fff5d8] rounded-[50px] text-center flex justify-center items-center flex-col text-[15px] font-semibold  md:p-9 lg:w-[70%] ">
+          <div className="mb-[2px] text-[15px] font-bold">Why Practice?</div>
           <div>
             Practice transforms knowledge into confidence. Every quiz you take
             helps you identify weak areas, reinforces what you know, and ensures
