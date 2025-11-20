@@ -53,8 +53,8 @@ function QuestionPage() {
   const isLast = currentQuestion === totalQuestions - 1;
 
   return (
-    <div className="w-[100%] min-h-[100vh] bg-[#eebc73] flex justify-center items-center">
-      <div className="w-[90%] h-[90%] bg-[#eebc73] shadow-soft rounded-xl flex flex-col p-[10px_15px]">
+    <div className="w-[100%] min-h-[100vh] bg-[#fff9e7] flex justify-center items-center">
+      <div className="w-[90%] h-[90%] bg-[#fff9e7] shadow-soft rounded-xl flex flex-col p-[10px_15px]">
         <div className="flex justify-center items-center italic font-[600] lg:text-[70px] 2xl:text-[70px] ">
           EduNexa{" "}
           <LuNotebookPen size="40px" className="md:size-16 lg:size-22 " />
@@ -64,7 +64,7 @@ function QuestionPage() {
           QUESTION: {currentQuestion + 1}/{totalQuestions}
         </div>
 
-        <div className="text-[15px] font-[500] lg:text-[23px] mt-[10px]">
+        <div className="text-[15px] font-[500] lg:text-[23px] mt-[10px] text-center">
           {question.question}
         </div>
 
@@ -79,11 +79,16 @@ function QuestionPage() {
               <div
                 key={idx}
                 onClick={() => handleOptionClick(opt)}
-                className={`p-[2px_10px] w-[90%] mb-[10px] rounded-[3px] text-[15px] font-[500] lg:text-[23px] lg:p-[12px_15px] lg:rounded-[7px] cursor-pointer ${
-                  isSelected
-                    ? "bg-[white] text-[#818181]"
-                    : "bg-black text-[#818181] "
-                }`}
+                className={`
+    p-[2px_10px] w-[90%] mb-[10px] rounded-[3px] text-[15px] font-[500]
+    lg:text-[23px] lg:p-[12px_15px] lg:rounded-[7px]
+    cursor-pointer transition-all duration-150
+    ${
+      isSelected
+        ? "bg-white text-[#818181] hover:bg-[#eaeaea] active:bg-[#dcdcdc]"
+        : "bg-black text-[#818181] hover:bg-[#2a2a2a] active:bg-[#3a3a3a]"
+    }
+  `}
               >
                 {opt}
               </div>
@@ -94,7 +99,7 @@ function QuestionPage() {
         <div className="flex justify-end items-center mt-[10px]">
           {!isFirst && (
             <div
-              className="mr-[15px] bg-[black] rounded-[7px] p-[5px_7px] text-[15px] font-[500] lg:text-[23px] lg:p-[10px_10px] text-[#818181] cursor-pointer hover:bg-[#f7deb9]"
+              className="mr-[15px] bg-[black] rounded-[7px] p-[5px_7px] text-[15px] font-[500] lg:text-[23px] lg:p-[10px_10px] text-[#818181] cursor-pointer hover:bg-[#f7deb9] hover:text-white"
               onClick={handlePrevious}
             >
               Previous
@@ -102,7 +107,13 @@ function QuestionPage() {
           )}
 
           <div
-            className={`mr-[10px] bg-[black] rounded-[5px] p-[5px_12px] text-[15px] text-[#818181] font-[500] lg:text-[23px] lg:p-[10px_14px] cursor-pointer hover:bg-[#f7deb9]`}
+            className={`
+    mr-[10px] bg-black rounded-[5px] p-[5px_12px]
+    text-[15px] font-[500] text-[#818181]
+    lg:text-[23px] lg:p-[10px_14px]
+    cursor-pointer
+    hover:bg-[#f7deb9] hover:text-black
+  `}
             onClick={handleNext}
           >
             {isLast ? "Submit" : "Next"}
