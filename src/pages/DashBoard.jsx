@@ -36,7 +36,6 @@ const navigate = useNavigate()
       flex 
       justify-center
       items-center
-      overflow-hidden
       ">
       <div className="
       w-[90%]
