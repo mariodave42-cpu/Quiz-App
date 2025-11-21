@@ -105,7 +105,7 @@ const navigate = useNavigate()
       <div className="w-[98%] h-[350px] bg-[#f8eac0] rounded-[20px]"> 
       <ChartPerformance correct={correct} wrong={wrong} />
       </div>
-      <div className="w-[95%] mt-5 p-4 bg-[#ffffff] shadow-[rgba(0, 0, 0, 0.35) 0px 5px 15px;] rounded-xl shadow-md flex items-center justify-between lg:w-[50%]">
+      <div className="w-[95%] mt- p-4 bg-[#ffffff] shadow-[rgba(0, 0, 0, 0.35) 0px 5px 15px;] rounded-xl shadow-md flex items-center justify-between lg:w-[50%]">
   <div>
     <h3 className="font-bold text-[30px] text-[#75766e]">Accuracy :</h3>
     <p className="text-[17px] text-[#75766e] font-[600]">Your overall performance :</p>
