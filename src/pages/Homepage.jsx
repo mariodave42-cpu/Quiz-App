@@ -7,23 +7,17 @@ const Homepage = () => {
   const [username, setUsername] = useState("");
 
   const handleClick = () => {
-    Swal.fire({
-      title: "Enter your Username",
-      input: "text",
-      inputPlaceholder: "Username",
-      confirmButtonText: "Register",
-      allowOutsideClick: false
-    }).then((result) => {
-      const username = result.value;
+   if (!username.trim()) {
+      Swal.fire({
+        icon: "error",
+        title: "Username Required",
+        text: "Please enter a username before continuing."
+      });
+      return;
+    }
 
-      if (!username || !username.trim()) {
-        Swal.fire("Username is required");
-        return;
-      }
-
-      localStorage.setItem("username", username.trim());
-      navigate("/welcomepage");
-    });
+    localStorage.setItem("username", username.trim());
+    navigate("/welcomepage");
   };
   return (
     <div className="w-full h-screen bg-[#ffffff] flex justify-center items-center ">
