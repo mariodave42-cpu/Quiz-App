@@ -1,17 +1,29 @@
 import { useState } from "react";
 import img1 from "../assets/register.jpg"
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 const Homepage = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
 
   const handleClick = () => {
-    if (!username.trim()) {
-      alert("Please enter a Username ");
-      return;
-    }
-    localStorage.setItem("username", username);
-    navigate("/welcomepage");
+    Swal.fire({
+      title: "Enter your Username",
+      input: "text",
+      inputPlaceholder: "Username",
+      confirmButtonText: "Register",
+      allowOutsideClick: false
+    }).then((result) => {
+      const username = result.value;
+
+      if (!username || !username.trim()) {
+        Swal.fire("Username is required");
+        return;
+      }
+
+      localStorage.setItem("username", username.trim());
+      navigate("/welcomepage");
+    });
   };
   return (
     <div className="w-full h-screen bg-[#ffffff] flex justify-center items-center ">
